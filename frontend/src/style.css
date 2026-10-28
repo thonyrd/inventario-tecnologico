@@ -255,6 +255,23 @@ form textarea {
 /* -------------------- */
 /* Tarjetas */
 /* -------------------- */
+.header-detalle {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.header-detalle h1 {
+
+  margin: 0;
+}
+
+
 
 .card {
 

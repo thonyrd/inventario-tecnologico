@@ -65,15 +65,26 @@ onMounted(cargar)
 
 </script>
 
+
 <template>
 
 <div>
 
-<h1>
+<div class="header-detalle">
 
-Editar Equipo
+  <h1>
+    Editar Equipo
+  </h1>
 
-</h1>
+  <RouterLink to="/">
+    <button class="btn-primary">
+      ← Volver al Inventario
+    </button>
+  </RouterLink>
+
+</div>
+
+
 
 <p v-if="error">
 
