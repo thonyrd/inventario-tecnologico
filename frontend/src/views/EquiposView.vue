@@ -118,6 +118,14 @@ onMounted(cargar)
 
 <h1>Inventario Tecnológico</h1>
 
+<RouterLink
+  to="/equipos/nuevo"
+>
+  <button class="btn-success">
+    + Nuevo Equipo
+  </button>
+</RouterLink>
+
 <p>
 
 Total:
@@ -289,17 +297,35 @@ v-for="equipo in equiposFiltrados"
 <td>
 
 <RouterLink
- :to="`/equipos/${equipo.id}`"
+  :to="`/equipos/${equipo.id}`"
 >
- Ver
+
+  <button class="btn-primary">
+
+    Ver
+
+  </button>
+
 </RouterLink>
 
-
-<button
-@click="borrar(equipo.id)"
+<RouterLink
+  :to="`/equipos/${equipo.id}`"
 >
 
-Eliminar
+  <button class="btn-edit">
+
+    Editar
+
+  </button>
+
+</RouterLink>
+
+<button
+  class="btn-delete"
+  @click="borrar(equipo.id)"
+>
+
+  Eliminar
 
 </button>
 
